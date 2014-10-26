@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>User Signup</title>	
+</head
+
+<body>
+  <form method = "post">
+    <label> Username 
+    <input type = "text" name = "username" placeholder = "Enter username">
+	</label>
+	<div>$(username_error)s</div><br><br>
+	
+	#label closing tag needs to enclose input tag?
+	<label> Password 	
+    <input type = "password" name = "password" placeholder = "Enter password">
+	</label>
+	<div>$(password_error)s</div>
+	<br><br>
+	
+	<label> Verify Password </label>	
+    <input type = "password" name = "verify" placeholder = "Verify password">
+    <div>$(verify_error)s</div>
+	<br><br>
+	
+	<label> Email(optional)</label>	
+    <input type = "text" name = "email" placeholder = "Enter an email">
+	<div>$(email_error)s</div>
+	<br><br>
+	
+    <input type = "submit" value = "cool beans!">
+  </form>
+</body>
+
+</html>
