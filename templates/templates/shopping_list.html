@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form >
+  <div class="row">
+	<div class="col-lg-3">
+	<!--
+	<h2 class="text-info">Add a Food</h2>
+	-->
+	<div class="input-group">
+	<!--
+	<span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Add!</button>
+    </span>
+	-->
+	<input type="text" class ="form-control" name ="food" placeholder="Add a Food..">
+	{% if items %}
+		{% for item in items %}
+			<input type = "hidden" name = "food" value ="{{item}}">
+		{% endfor %}
+	{% endif %}
+	
+	<span class="input-group-btn">
+        <button class="btn btn-info" type="submit">Add!</button>
+    </span>
+		
+	</div><!--input group-->
+	</div><!--col-md-3-->
+	<div class="col-lg-3">
+	<!--empty -->
+	</div>
+	
+	{% if items %}
+	
+	<div class = "col-md-6">
+		<h2><span class="label label-info">Shopping List </span></h2>
+		<ul>
+			{% for item in items %}
+				<li>{{item | safe}}</li> <!--allow safe html tags-->
+			{% endfor %}
+		</ul>
+	{% endif %}
+	</div><!--col-md-6-->
+	</div><!--row-->
+	
+
+<!--container-->
+</form>
+{% endblock %}

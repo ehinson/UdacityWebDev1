@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Udacity Templates!</title>
+		<!--
+		<link rel="stylesheet" href="base_styles.css">
+		-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		
+		<style type="text/css">
+		.jumbotron h1 { 
+		  color:white;
+		}
+		.wide {
+		  width:100%;
+		  height:200px;
+		  background-image:url('');
+		  background-size:cover;
+		}
+		.jumbotron {
+		  height:480px;
+		  background-image:url('https://unsplash.imgix.net/reserve/OQx70jjBSLOMI5ackhxm_urbex-ppc-030.jpg?q=75&fm=jpg&auto=format&s=2070048d9cbc8546cb0bb4d0317c5b60');
+		  background-size:cover;
+		}
+		.jumbotron{
+		 
+		  -webkit-background-size: 100% 100%;
+		  -moz-background-size: 100% 100%;
+		  -o-background-size: 100% 100%;
+		  background-size: 100% 100%;
+		}
+		list-group-item {
+		  border:none;
+		}
+		.img-responsive {
+		  margin:auto;
+		}
+		</style>
+
+		<script src="myScript.js"></script>
+	</head>
+	
+	<body style ="margin: 0">
+	 <div class="jumbotron" >
+	  <div class="container push-spaces">
+		<!-- 
+		Can also place script in the body
+		<script src="myScript.js"></script> 
+		-->
+		<div class="wide">
+  	<div class="col-xs-5 line"><hr></div>
+    <div class="col-xs-2 logo"><img src="http://placehold.it/90/000000/ffffff&text=Logo" class="img-responsive" alt="logo"></div>
+    <div class="col-xs-5 line"><hr></div>
+</div><!--wide -->
+		<h1 >
+		Udacity Templates
+		</h1>
+		<nav class = "navbar navbar-default" role="navigation">
+		<ul class="nav navbar-nav">
+        <li><a href="/">Shopping List</a></li>
+		<li><a href="/fizzbuzz">FizzBuzz</a></li>
+
+        
+		</nav>
+		<!--
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  -->
+  </div><!--container push-spaces-->
+</div><!--jumbotron-->
+		<div class="container">
+		{% block content%}
+		{% endblock %}
+		</div>
+	</body>
+</html>
